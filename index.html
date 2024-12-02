@@ -1,204 +1,190 @@
-<?php 
-/**  
- * Template Name: Coming Soon  
- * Description: A more interesting Coming Soon page with background animation, hover effects, typing effect, and progress bar.  
- */ 
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="icon" href="icon/icon.png" type="image/png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon - Noob Pianist</title>
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body Styles */
-        body {
-            font-family: Arial, sans-serif;
-            color: #fff;
-            background: linear-gradient(135deg, #007BFF, #6610f2);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-            animation: backgroundAnimation 15s infinite alternate;
-            margin: 0;
-            padding-bottom: 70px; /* Add padding to the bottom to prevent footer overlap */
-        }
-
-        @keyframes backgroundAnimation {
-            0% { background: linear-gradient(135deg, #007BFF, #6610f2); }
-            50% { background: linear-gradient(135deg, #6610f2, #007BFF); }
-            100% { background: linear-gradient(135deg, #007BFF, #6610f2); }
-        }
-
-        .container {
-            text-align: center;
-            animation: fadeIn 2s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Icon */
-        .icon {
-            width: 120px; /* Larger icon */
-            height: 120px;
-            margin-bottom: 30px;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        /* Title */
-        h1 {
-            font-size: 4rem;
-            margin: 0;
-            animation: typing 3s steps(30) 1s 1 normal both;
-            overflow: hidden;
-            white-space: nowrap;
-            width: 0;
-        }
-
-        /* Typing Effect */
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        /* Subtitle */
-        p {
-            font-size: 1.5rem;
-            margin: 20px 0;
-            opacity: 0.8;
-            animation: fadeIn 3s ease-in-out;
-        }
-
-        /* Countdown */
-        #countdown {
-            font-size: 2rem;
-            margin-top: 20px;
-            opacity: 0.8;
-            animation: fadeIn 3s ease-in-out;
-        }
-
-        /* Progress Bar */
-        .progress-container {
-            width: 80%;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            margin-top: 30px;
-            height: 20px;
-        }
-
-        .progress-bar {
-            height: 100%;
-            background-color: #f39c12;
-            border-radius: 20px;
-            width: 0%;
-            transition: width 1s ease;
-        }
-
-        /* Footer */
-        footer {
-            position: relative; /* Change to relative to avoid footer being hidden */
-            margin-top: auto; /* Pushes footer to the bottom */
-            padding-bottom: 20px; /* Ensures space below the footer */
-            font-size: 0.9rem;
-            opacity: 0.7;
-            animation: fadeIn 4s ease-in-out;
-            z-index: 10; /* Ensures the footer is on top */
-        }
-
-        /* Fade-in animation */
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Add GIF at the bottom left */
-        .piano-gif {
-            position: absolute;
-            bottom: 10px; /* Adjust position to add space */
-            left: 10px;
-            width: 200px;
-            height: auto;
-            z-index: 1; /* Ensure the GIF stays below the footer */
-        }
-
-        /* Add mirror GIF at the bottom right */
-        .piano-gif-mirror {
-            position: absolute;
-            bottom: 10px; /* Adjust position to add space */
-            right: 10px;
-            width: 200px;
-            height: auto;
-            transform: scaleX(-1); /* Flip the image horizontally */
-            z-index: 1; /* Ensure the GIF stays below the footer */
-        }
-
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="icon/icon.png" alt="Noob Pianist Icon" class="icon"> <!-- Icon above the text -->
-        <h1>Coming Soon...</h1>
-        <p>Exclusive sheet music coming soon!</p>
-        <div id="countdown"></div> <!-- Countdown timer -->
-        <div class="progress-container">
-            <div class="progress-bar" id="progress-bar"></div> <!-- Progress Bar -->
-        </div>
-    </div>
-    <footer>&copy; 2024 Noob Pianist. All Rights Reserved.</footer>
-
-    <!-- Add GIF at bottom left -->
-    <img src="https://media.tenor.com/AFUYq2XPpOkAAAAi/mother3-earthbound.gif" alt="Kanna Piano GIF" class="piano-gif">
-
-    <!-- Add mirror GIF at bottom right -->
-    <img src="https://media.tenor.com/AFUYq2XPpOkAAAAi/mother3-earthbound.gif" alt="Kanna Piano GIF Mirror" class="piano-gif-mirror">
-
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();
-
-        // Update the countdown every 1 second
-        var x = setInterval(function() {
-
-            // Get the current date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the countdown date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes, and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="countdown"
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-            // Calculate progress bar width
-            var progress = (1 - distance / (countDownDate - new Date("Jan 1, 2024").getTime())) * 100;
-            document.getElementById("progress-bar").style.width = progress + "%";
-
-            // If the countdown is over, display a message
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML = "We're Live!";
-                document.getElementById("progress-bar").style.width = "100%";
-            }
-        }, 1000);
-    </script>
-</body>
+<?php /**   
+ * Template Name: Coming Soon   
+ * Description: A more interesting Coming Soon page with background animation, hover effects, typing effect, and progress bar.   
+ */ ?>  
+<!DOCTYPE html>  
+<html lang="en">  
+<head>     
+    <link rel="icon" href="icon/icon.png" type="image/png">     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Coming Soon - Noob Pianist</title>     
+    <style>         
+        /* General Reset */         
+        * {             
+            margin: 0;             
+            padding: 0;             
+            box-sizing: border-box;         
+        }          
+        /* Body Styles */         
+        body {             
+            font-family: Arial, sans-serif;             
+            color: #fff;             
+            background: linear-gradient(135deg, #007BFF, #6610f2);             
+            display: flex;             
+            flex-direction: column;             
+            justify-content: center;             
+            align-items: center;             
+            height: 100vh;             
+            overflow: hidden;             
+            animation: backgroundAnimation 15s infinite alternate;             
+            margin: 0; /* Ensures no overflow issues */         
+        }          
+        @keyframes backgroundAnimation {             
+            0% { background: linear-gradient(135deg, #007BFF, #6610f2); }             
+            50% { background: linear-gradient(135deg, #6610f2, #007BFF); }             
+            100% { background: linear-gradient(135deg, #007BFF, #6610f2); }         
+        }          
+        .container {             
+            text-align: center;             
+            animation: fadeIn 2s ease-in-out;             
+            display: flex;             
+            flex-direction: column;             
+            justify-content: center;             
+            align-items: center;             
+            width: 100%; /* Ensure responsiveness */             
+            padding: 10px; /* Adds padding for mobile devices */         
+        }          
+        /* Icon */         
+        .icon {             
+            width: 120px; /* Larger icon */             
+            height: 120px;             
+            margin-bottom: 30px;             
+            animation: fadeIn 1.5s ease-in-out;         
+        }          
+        /* Title */         
+        h1 {             
+            font-size: 4rem;             
+            margin: 0;             
+            animation: typing 3s steps(30) 1s 1 normal both;             
+            overflow: hidden;             
+            white-space: nowrap;             
+            width: 0;         
+        }          
+        /* Typing Effect */         
+        @keyframes typing {             
+            from { width: 0; }             
+            to { width: 100%; }         
+        }          
+        /* Subtitle */         
+        p {             
+            font-size: 1.5rem;             
+            margin: 20px 0;             
+            opacity: 0.8;             
+            animation: fadeIn 3s ease-in-out;         
+        }          
+        /* Countdown */         
+        #countdown {             
+            font-size: 2rem;             
+            margin-top: 20px;             
+            opacity: 0.8;             
+            animation: fadeIn 3s ease-in-out;         
+        }          
+        /* Progress Bar */         
+        .progress-container {             
+            width: 80%;             
+            background: rgba(255, 255, 255, 0.2);             
+            border-radius: 20px;             
+            margin-top: 30px;             
+            height: 20px;         
+        }          
+        .progress-bar {             
+            height: 100%;             
+            background-color: #f39c12;             
+            border-radius: 20px;             
+            width: 0%;             
+            transition: width 1s ease;         
+        }          
+        /* Footer */         
+        footer {             
+            position: absolute;             
+            bottom: 20px;             
+            font-size: 0.9rem;             
+            opacity: 0.7;             
+            animation: fadeIn 4s ease-in-out;         
+        }          
+        /* Fade-in animation */         
+        @keyframes fadeIn {             
+            0% { opacity: 0; transform: translateY(20px); }             
+            100% { opacity: 1; transform: translateY(0); }         
+        }          
+        /* Add GIF at the bottom left */         
+        .piano-gif {             
+            position: absolute;             
+            bottom: 0;             
+            left: 0;             
+            width: 200px; /* Adjust size if necessary */             
+            height: auto;             
+            margin: 10px;         
+        }          
+        /* Add mirror GIF at the bottom right */         
+        .piano-gif-mirror {             
+            position: absolute;             
+            bottom: 0;             
+            right: 0;             
+            width: 200px; /* Adjust size if necessary */             
+            height: auto;             
+            margin: 10px;             
+            transform: scaleX(-1); /* Flip the image horizontally */         
+        }          
+        /* Responsive Design */         
+        @media (max-width: 768px) {             
+            h1 { font-size: 2.5rem; }             
+            p { font-size: 1.2rem; }             
+            .progress-container { width: 90%; }             
+            .icon { width: 100px; height: 100px; }             
+            .piano-gif, .piano-gif-mirror { width: 150px; }         
+        }          
+        @media (max-width: 480px) {             
+            h1 { font-size: 2rem; }             
+            p { font-size: 1rem; }             
+            .progress-container { width: 100%; }             
+            .icon { width: 80px; height: 80px; }             
+            .piano-gif, .piano-gif-mirror { width: 120px; }         
+        }     
+    </style> 
+</head> 
+<body>     
+    <div class="container">         
+        <img src="icon/icon.png" alt="Noob Pianist Icon" class="icon"> <!-- Icon above the text -->         
+        <h1>Coming Soon...</h1>         
+        <p>Exclusive sheet music coming soon for beginners!</p>         
+        <div id="countdown"></div> <!-- Countdown timer -->         
+        <div class="progress-container">             
+            <div class="progress-bar" id="progress-bar"></div> <!-- Progress Bar -->         
+        </div>     
+    </div>     
+    <footer>&copy; 2024 Noob Pianist. All Rights Reserved.</footer>      
+    <!-- Add GIF at bottom left -->     
+    <img src="https://media.tenor.com/AFUYq2XPpOkAAAAi/mother3-earthbound.gif" alt="Kanna Piano GIF" class="piano-gif">      
+    <!-- Add mirror GIF at bottom right -->     
+    <img src="https://media.tenor.com/AFUYq2XPpOkAAAAi/mother3-earthbound.gif" alt="Kanna Piano GIF Mirror" class="piano-gif-mirror">      
+    <script>         
+        // Set the date we're counting down to         
+        var countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();          
+        // Update the countdown every 1 second         
+        var x = setInterval(function() {              
+            // Get the current date and time             
+            var now = new Date().getTime();              
+            // Find the distance between now and the countdown date             
+            var distance = countDownDate - now;              
+            // Time calculations for days, hours, minutes, and seconds             
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));             
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));             
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));             
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);              
+            // Display the result in the element with id="countdown"             
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";              
+            // Calculate progress bar width             
+            var progress = (1 - distance / (countDownDate - new Date("Jan 1, 2024").getTime())) * 100;             
+            document.getElementById("progress-bar").style.width = progress + "%";              
+            // If the countdown is over, display a message             
+            if (distance < 0) {                 
+                clearInterval(x);                 
+                document.getElementById("countdown").innerHTML = "We're Live!";                 
+                document.getElementById("progress-bar").style.width = "100%";             
+            }         
+        }, 1000);     
+    </script> 
+</body> 
 </html>
