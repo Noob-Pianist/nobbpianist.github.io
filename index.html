@@ -1,9 +1,8 @@
-<?php
-/**
- * Template Name: Coming Soon
- * Description: A simple coming soon page.
- */
-?>
+<?php /** 
+ * Template Name: Coming Soon 
+ * Description: A simple coming soon page with icon and countdown timer.
+ */ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +41,20 @@
             animation: fadeIn 3s ease-in-out;
         }
 
+        .icon {
+            width: 100px; /* Size of the icon */
+            height: 100px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        #countdown {
+            font-size: 2rem;
+            margin-top: 20px;
+            opacity: 0.8;
+            animation: fadeIn 3s ease-in-out;
+        }
+
         footer {
             position: absolute;
             bottom: 20px;
@@ -64,9 +77,43 @@
 </head>
 <body>
     <div class="container">
+        <img src="icon/icon.png" alt="Noob Pianist Icon" class="icon"> <!-- Icon above the text -->
         <h1>Coming Soon</h1>
         <p>Stay tuned for something amazing!</p>
+
+        <div id="countdown"></div> <!-- Countdown timer -->
+
     </div>
     <footer>&copy; 2024 Noob Pianist. All Rights Reserved.</footer>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+
+            // Get the current date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the countdown date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes, and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "We're Live!";
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
