@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Noob Pianist</title>
+    <title>Contacts - Noob Pianist</title>
     <meta name="description" content="Place to find all the Noob Pianist Music Sheet to Download for Free">
     <script>
         (function() {
@@ -87,44 +87,8 @@
             });
         })();
     </script>
-	<script>
-    // Countdown Timer Logic
-    function startCountdown() {
-        // Set the target date (e.g., website launch date)
-        const targetDate = new Date("2025-01-01T00:00:00").getTime();
-
-        const countdownInterval = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            // Time calculations for days, hours, minutes, and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Update the countdown elements
-            document.getElementById("days").innerText = days < 10 ? "0" + days : days;
-            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
-            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
-            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
-
-            // If the countdown finishes, display a message
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                document.getElementById("countdown").innerHTML = "<h1>Launched!</h1>";
-            }
-        }, 1000);
-    }
-
-    // Start the countdown timer when the page loads
-    window.onload = startCountdown;
-</script>
-
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/Update1-Coming-Soon-Site.css">
 </head>
 
 <body>
@@ -132,11 +96,11 @@
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>Noob Pianist</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="404.html">Songs</a></li>
                     <li class="nav-item"><a class="nav-link" href="404.html">Artists</a></li>
                     <li class="nav-item"><a class="nav-link" href="404.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="requests.html">Request</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="requests.html">Request</a></li>
                 </ul>
                 <div class="theme-switcher dropdown"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
                             <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
@@ -153,43 +117,35 @@
             </div>
         </div>
     </nav>
-    <header class="pt-5">
-        <div class="container pt-4 pt-xl-5">
-            <div class="row pt-5">
-                <div class="col-md-8 text-center text-md-start mx-auto">
-                    <div class="text-center">
-                        <h1 class="display-4 fw-bold mb-5">Free Piano Music Sheet&nbsp;<span class="underline">Forever</span>.</h1>
-                        <p class="fs-5 text-muted mb-5" style="text-shadow: 0px 9px 12px;">Play more, pay less.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-10 mx-auto">
-                    <div class="text-center position-relative"></div>
+    <section class="py-5 mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2 class="display-6 fw-bold mb-4">Got any <span class="underline">song request</span>?</h2>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="py-4 py-xl-5 mb-5">
-        <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <div class="row">
-                <div class="col-md-12 mt-4"><img class="img-fluid" src="assets/img/pic600x300.png"></div>
-                <div class="col-12 col-md-12 col-xl-12 offset-xl-0">
-                    <div id="countdown">
-                        <ul class="list-unstyled d-flex flex-row" style="max-width: 700px;">
-                            <li style="font-size: 69px;"><span id="days" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Days</span></li>
-                            <li style="font-size: 69px;"><span id="hours" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Hours</span></li>
-                            <li style="font-size: 69px;"><span id="minutes" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Minutes</span></li>
-                            <li style="font-size: 69px;"><span id="seconds" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Seconds</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <h1 style="font-size: 50px;">COMING SOON</h1>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div>
+  <form id="myForm" class="p-3 p-xl-4">
+    <div class="mb-3">
+        <input class="shadow form-control" type="text" id="username" name="username" placeholder="Username" required>
+    </div>
+    <div class="mb-3">
+        <textarea class="shadow form-control" id="question" name="question" rows="6" placeholder="Your requests" required></textarea>
+    </div>
+    <div>
+        <button class="btn btn-primary shadow d-block w-100" type="submit">Send</button>
+    </div>
+</form>
+  <div id="successMessage" class="mt-3 text-success" style="display: none;">Message sent successfully!</div>
+</div>
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-4 py-xl-5"></section>
-    <footer>
+        <footer>
         <div class="container py-4 py-lg-5">
             <div class="row row-cols-2 row-cols-md-4">
                 <div class="col-12 col-md-3 col-xl-5">
@@ -218,6 +174,77 @@
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/startup-modern.js"></script>
+    <script>
+    document.getElementById('myForm').addEventListener('submit', async function (e) {
+        e.preventDefault(); // Prevent form from reloading the page
+
+        const username = "noob_pianist";
+	const username1 = document.getElementById('username').value;
+        const combinedResultquestion = document.getElementById('question').value;
+	const question = username1 + ' ' + combinedResultquestion;
+        const deviceId = 'e4791f9e-3a7e-4daf-ba5a-907c22573f16'; // Example static value
+        const gameSlug = ''; // Leave empty if not applicable
+        const referrer = ''; // Leave empty if not applicable
+
+        const payload = new URLSearchParams({
+            username,
+            question,
+            deviceId,
+            gameSlug,
+            referrer
+        });
+
+        try {
+            const response = await fetch('https://ngl.link/api/submit', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Accept': '*/*',
+        'X-Requested-With': 'XMLHttpRequest',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.140 Safari/537.36',
+        'Sec-Ch-Ua': '"Chromium";v="131", "Not_A Brand";v="24"',
+        'Sec-Ch-Ua-Mobile': '?0',
+        'Sec-Ch-Ua-Platform': '"Windows"',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Origin': 'https://ngl.link',
+        'Sec-Fetch-Site': 'same-origin',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Dest': 'empty',
+        'Referer': 'https://ngl.link/noob_pianist',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Priority': 'u=1, i',
+    },
+    body: payload,
+    mode: 'no-cors' // Add no-cors mode here
+});
+
+
+            if (response.ok) {
+                // Do not expect a response body, just acknowledge that the request was successful
+                alert('Form submitted successfully!');
+            } else {
+                const errorDetails = await response.text(); // Get error details from the response body
+                console.error('Error:', response.status, errorDetails);
+                document.getElementById('username').value = '';
+            	document.getElementById('question').value = '';
+
+            	alert('Form submitted successfully!');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+	    document.getElementById('username').value = '';
+            document.getElementById('question').value = '';
+
+            alert('Form submitted successfully!');
+
+        }
+    });
+</script>
+
+
+
+
+
 </body>
 
 </html>
