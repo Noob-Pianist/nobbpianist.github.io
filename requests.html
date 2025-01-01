@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Contacts - Noob Pianist</title>
+    <title>Pricing - Noob Pianist</title>
     <meta name="description" content="Place to find all the Noob Pianist Music Sheet to Download for Free">
     <script>
-	
         (function() {
 
             // JavaScript snippet handling Dark/Light mode switching
@@ -88,30 +87,14 @@
             });
         })();
     </script>
-    <style>
-		.error-shake {
-		  animation: shake 0.5s;
-		}
-
-		@keyframes shake {
-		  0% { transform: translate(1px, 0px); }
-		  10% { transform: translate(-2px, 0px); }
-		  20% { transform: translate(2px, 0px); }
-		  30% { transform: translate(-3px, 0px); }
-		  40% { transform: translate(3px, 0px); }
-		  50% { transform: translate(-2px, 0px); }
-		  60% { transform: translate(2px, 0px); }
-		  70% { transform: translate(-1px, 0px); }
-		  80% { transform: translate(1px, 0px); }
-		  90% { transform: translate(-1px, 0px); }
-		  100% { transform: translate(0px, 0px); }
-		}
-		.error-border{
-			border: 1px solid red;
-		}
-	</style>
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="assets/css/Color-Contact-List.css">
+    <link rel="stylesheet" href="assets/css/Contact-Details-icons.css">
+    <link rel="stylesheet" href="assets/css/Light-Contact-List.css">
+    <link rel="stylesheet" href="assets/css/Update1-Coming-Soon-Site.css">
 </head>
 
 <body>
@@ -120,10 +103,10 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="404.html">Songs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="404.html">Artists</a></li>
-                    <li class="nav-item"><a class="nav-link" href="404.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="requests.html">Request</a></li>
+                    <li class="nav-item"><a class="nav-link" href="songs.html">Songs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active"  href="requests.html">Request</a></li>
                 </ul>
                 <div class="theme-switcher dropdown"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
                             <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
@@ -150,55 +133,51 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6">
                     <div>
-  <form id="myForm" class="p-3 p-xl-4">
-    <div class="mb-3">
-        <input class="shadow form-control" type="text" id="username" name="username" maxlength="100" placeholder="Username" required>
-        <div id="usernameCount" class="text-muted small"></div> <div id="usernameError" class="text-danger small"></div>
-    </div>
-    <div class="mb-3">
-        <textarea class="shadow form-control" id="question" name="question" rows="6" maxlength="300" placeholder="Your requests" required></textarea>
-        <div id="questionCount" class="text-muted small">0 characters</div> <div id="questionError" class="text-danger small"></div>
-    </div>
-    <div>
-        <button class="btn btn-primary shadow d-block w-100" type="submit">Send</button>
-    </div>
-</form>
-  <div id="successMessage" class="mt-3 text-success" style="display: none;">Message sent successfully!</div>
-</div>
-
+					  <form id="myForm" class="p-3 p-xl-4">
+						<div class="mb-3">
+							<input class="shadow form-control" type="text" id="username" name="username" placeholder="Username" required>
+						</div>
+						<div class="mb-3">
+							<textarea class="shadow form-control" id="question" name="question" rows="6" placeholder="Your requests" required></textarea>
+						</div>
+						<div>
+							<button class="btn btn-primary shadow d-block w-100" type="submit">Send</button>
+						</div>
+					</form>
+					  <div id="successMessage" class="mt-3 text-success" style="display: none;">Message sent successfully!</div>
+					</div>
                 </div>
             </div>
         </div>
     </section>
-        <footer>
-        <div class="container py-4 py-lg-5">
-            <div class="row row-cols-2 row-cols-md-4">
-                <div class="col-12 col-md-3 col-xl-5">
-                    <div class="fw-bold d-flex align-items-center mb-2"><span>Noob Pianist</span></div>
-                    <p class="text-muted">Free piano sheet music forever.</p>
-                </div>
-                <div class="col-sm-4 col-md-3 col-xl-4 text-lg-start d-flex flex-column">
-                    <h3 class="fs-6 fw-bold">Services</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Music Transcribe</a></li>
-                        <li><a href="#">Music Arrangement</a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
-                <p class="mb-0">Copyright © 2025 Noob Pianist</p>
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item"></li>
-                    <li class="list-inline-item"></li>
-                    <li class="list-inline-item"></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/startup-modern.js"></script>
+	   <footer>
+			<!-- Donation Button -->
+			<div class="text-center mt-4">
+				<a href="https://sociabuzz.com/noob_pianist/tribe" class="btn btn-primary btn-lg" id="donateButton" target="_blank">Donate to Noob Pianist.</a>
+			</div>
+			<div class="container py-4 py-lg-5">
+				<div class="row row-cols-2 row-cols-md-4">
+					<div class="col-12 col-md-3 col-xl-5">
+						<div class="fw-bold d-flex align-items-center mb-2"><span>Noob Pianist</span></div>
+						<p class="text-muted">Free piano sheet music forever.</p>
+					</div>
+					<div class="col-sm-4 col-md-3 col-xl-4 text-lg-start d-flex flex-column">
+						<h3 class="fs-6 fw-bold">Services</h3>
+						<ul class="list-unstyled">
+							<li><a href="services.html">Music Transcribe</a></li>
+							<li><a href="services.html">Music Arrangement</a></li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<p class="mb-0">Copyright © 2025 Noob Pianist</p>
+			</div>		
+		</footer>
+
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/startup-modern.js"></script>
+		<script src="assets/js/theme-switcher.js"></script>
+		<script src="assets/js/donation.js"></script>
     <script>
     document.getElementById('myForm').addEventListener('submit', async function (e) {
         e.preventDefault(); // Prevent form from reloading the page
@@ -266,66 +245,8 @@
     });
 </script>
 
-	<script>
-		function setupInput(inputElement, countElement, errorElement, maxLength) {
-			inputElement.addEventListener('input', function() {
-				let charCount = inputElement.value.length;
-
-				if (charCount > maxLength) {
-					inputElement.value = inputElement.value.substring(0, maxLength);
-					charCount = maxLength;
-					errorElement.textContent = `Maximum ${maxLength} characters allowed.`;
-					inputElement.classList.add("error-shake", "error-border");
-
-					setTimeout(() => {
-						inputElement.classList.remove("error-shake");
-					}, 500);
-
-				} else {
-					errorElement.textContent = "";
-					inputElement.classList.remove("error-border");
-					inputElement.classList.remove("error-shake");
-				}
-
-				if (countElement) {
-					countElement.textContent = `${charCount} characters`;
-				}
-			});
-		}
-
-		const questionInput = document.getElementById('question');
-		const questionCharCount = document.getElementById('questionCount');
-		const questionError = document.getElementById('questionError');
-		const questionMaxLength = 200;
-		setupInput(questionInput, questionCharCount, questionError, questionMaxLength);
-
-		const usernameInput = document.getElementById('username');
-		const usernameError = document.getElementById('usernameError');
-		const usernameMaxLength = 20;
-		setupInput(usernameInput, null, usernameError, usernameMaxLength);
-
-		const form = document.getElementById('myForm'); // Get the form element
-
-		form.addEventListener('submit', function(event) {
-			// Prevent default form submission for demonstration
-			event.preventDefault();
-
-			//Reset input and error message
-			questionInput.value = "";
-			questionCharCount.textContent = "0 characters";
-			questionError.textContent = "";
-			questionInput.classList.remove("error-border");
-			questionInput.classList.remove("error-shake");
-
-			usernameInput.value = "";
-			usernameError.textContent = "";
-			usernameInput.classList.remove("error-border");
-			usernameInput.classList.remove("error-shake");
 
 
-			alert("Form submitted (simulated)"); // Replace with your actual submission logic
-		});
-	</script>
 
 
 </body>

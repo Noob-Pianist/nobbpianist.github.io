@@ -1,195 +1,82 @@
 <!DOCTYPE html>
 <html data-bs-theme="dark" lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Noob Pianist</title>
     <meta name="description" content="Place to find all the Noob Pianist Music Sheet to Download for Free">
-    <script>
-        (function() {
-
-            // JavaScript snippet handling Dark/Light mode switching
-
-            const getStoredTheme = () => localStorage.getItem('theme');
-            const setStoredTheme = theme => localStorage.setItem('theme', theme);
-            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
-
-            const getPreferredTheme = () => {
-
-                if (forcedTheme) return forcedTheme;
-
-                const storedTheme = getStoredTheme();
-                if (storedTheme) {
-                    return storedTheme;
-                }
-
-                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
-
-                if (pageTheme) {
-                    return pageTheme;
-                }
-
-                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            }
-
-            const setTheme = theme => {
-                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                    document.documentElement.setAttribute('data-bs-theme', 'dark');
-                } else {
-                    document.documentElement.setAttribute('data-bs-theme', theme);
-                }
-            }
-
-            setTheme(getPreferredTheme());
-
-            const showActiveTheme = (theme, focus = false) => {
-                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
-
-                if (!themeSwitchers.length) return;
-
-                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-                    element.classList.remove('active');
-                    element.setAttribute('aria-pressed', 'false');
-                });
-
-                for (const themeSwitcher of themeSwitchers) {
-
-                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
-
-                    if (btnToActivate) {
-                        btnToActivate.classList.add('active');
-                        btnToActivate.setAttribute('aria-pressed', 'true');
-                    }
-                }
-            }
-
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-                const storedTheme = getStoredTheme();
-                if (storedTheme !== 'light' && storedTheme !== 'dark') {
-                    setTheme(getPreferredTheme());
-                }
-            });
-
-            window.addEventListener('DOMContentLoaded', () => {
-                showActiveTheme(getPreferredTheme());
-
-                document.querySelectorAll('[data-bs-theme-value]')
-                    .forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            const theme = toggle.getAttribute('data-bs-theme-value');
-                            setStoredTheme(theme);
-                            setTheme(theme);
-                            showActiveTheme(theme);
-                        })
-                    })
-            });
-        })();
-    </script>
-	<script>
-    // Countdown Timer Logic
-    function startCountdown() {
-        // Set the target date (e.g., website launch date)
-        const targetDate = new Date("2025-01-30T00:00:00").getTime();
-
-        const countdownInterval = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            // Time calculations for days, hours, minutes, and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Update the countdown elements
-            document.getElementById("days").innerText = days < 10 ? "0" + days : days;
-            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
-            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
-            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
-
-            // If the countdown finishes, display a message
-            if (distance < 0) {
-                clearInterval(countdownInterval);
-                document.getElementById("countdown").innerHTML = "<h1>Launched!</h1>";
-            }
-        }, 1000);
-    }
-
-    // Start the countdown timer when the page loads
-    window.onload = startCountdown;
-</script>
-
+	<meta name="keywords" content="Free piano sheet music, piano music download, Noob Pianist, piano songs, beginner piano music">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="assets/css/Color-Contact-List.css">
+    <link rel="stylesheet" href="assets/css/Contact-Details-icons.css">
+    <link rel="stylesheet" href="assets/css/Light-Contact-List.css">
     <link rel="stylesheet" href="assets/css/Update1-Coming-Soon-Site.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>Noob Pianist</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/"><span>Noob Pianist</span></a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="404.html">Songs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="404.html">Artists</a></li>
-                    <li class="nav-item"><a class="nav-link" href="404.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="songs.html">Songs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="requests.html">Request</a></li>
                 </ul>
-                <div class="theme-switcher dropdown"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
+                <div class="theme-switcher dropdown">
+                    <a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
                             <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
-                        </svg></a>
-                    <div class="dropdown-menu"><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="light"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill opacity-50 me-2">
-                                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
-                            </svg>Light</a><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="dark"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-moon-stars-fill opacity-50 me-2">
-                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278"></path>
-                                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
-                            </svg>Dark</a><a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="auto"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-half opacity-50 me-2">
-                                <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"></path>
-                            </svg>Auto</a></div>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="light">Light</a>
+                        <a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="dark">Dark</a>
+                        <a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="auto">Auto</a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
+
     <header class="pt-5">
         <div class="container pt-4 pt-xl-5">
             <div class="row pt-5">
                 <div class="col-md-8 text-center text-md-start mx-auto">
-                    <div class="text-center">
-                        <h1 class="display-4 fw-bold mb-5">Free Piano Music Sheet&nbsp;<span class="underline">Forever</span>.</h1>
-                        <p class="fs-5 text-muted mb-5" style="text-shadow: 0px 9px 12px;">Play more, pay less.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-10 mx-auto">
-                    <div class="text-center position-relative"></div>
+                    <h1 class="display-4 fw-bold mb-5">Free Piano Music Sheet&nbsp;<span class="underline">Forever</span>.</h1>
+                    <p class="fs-5 text-muted mb-5" style="text-shadow: 0px 9px 12px;">Play more, pay less.</p>
                 </div>
             </div>
         </div>
     </header>
-    <section class="py-4 py-xl-5 mb-5">
-        <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <div class="row">
-                <div class="col-md-12 mt-4"><img class="img-fluid" src="assets/img/pic600x300.png"></div>
-                <div class="col-12 col-md-12 col-xl-12 offset-xl-0">
-                    <div id="countdown">
-                        <ul class="list-unstyled d-flex flex-row" style="max-width: 700px;">
-                            <li style="font-size: 69px;"><span id="days" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Days</span></li>
-                            <li style="font-size: 69px;"><span id="hours" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Hours</span></li>
-                            <li style="font-size: 69px;"><span id="minutes" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Minutes</span></li>
-                            <li style="font-size: 69px;"><span id="seconds" class="span" style="font-size: 50px;">00</span><span class="d-flex justify-content-center fs-5 fs-lg-1">Seconds</span></li>
-                        </ul>
-                    </div>
+
+    <section>
+        <div class="container py-4 py-xl-5" data-bs-theme="light">
+            <div class="row gx-1 row-cols-2 justify-content-start">
+                <div class="col">
+                    <h1 class="display-2 text-center text-success">Latest Songs</h1>
                 </div>
-                <div class="col-md-12 mt-5">
-                    <h1 style="font-size: 50px;">COMING SOON</h1>
-                </div>
+            </div>
+            <div class="row gy-2 row-cols-1 row-cols-md-2 row-cols-lg-3" id="songs-list">
+                <!-- Songs will be dynamically updated here -->
             </div>
         </div>
     </section>
-    <section class="py-4 py-xl-5"></section>
+
     <footer>
+		<!-- Donation Button -->
+        <div class="text-center mt-4">
+            <a href="https://sociabuzz.com/noob_pianist/tribe" class="btn btn-primary btn-lg" id="donateButton" target="_blank">Donate to Noob Pianist.</a>
+        </div>
         <div class="container py-4 py-lg-5">
             <div class="row row-cols-2 row-cols-md-4">
                 <div class="col-12 col-md-3 col-xl-5">
@@ -199,25 +86,66 @@
                 <div class="col-sm-4 col-md-3 col-xl-4 text-lg-start d-flex flex-column">
                     <h3 class="fs-6 fw-bold">Services</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#">Music Transcribe</a></li>
-                        <li><a href="#">Music Arrangement</a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="services.html">Music Transcribe</a></li>
+                        <li><a href="services.html">Music Arrangement</a></li>
                     </ul>
                 </div>
             </div>
             <hr>
-            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
-                <p class="mb-0">Copyright © 2025 Noob Pianist</p>
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item"></li>
-                    <li class="list-inline-item"></li>
-                    <li class="list-inline-item"></li>
-                </ul>
-            </div>
-        </div>
+            <p class="mb-0">Copyright © 2025 Noob Pianist</p>
+        </div>		
     </footer>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/startup-modern.js"></script>
-</body>
+    <script src="assets/js/theme-switcher.js"></script>
+	<script src="assets/js/donation.js"></script>
 
+    <script>
+        const songs = [
+            { title: "Tick-Tack", artist: "Illit", imageUrl: "path/to/tick-tack.jpg", previewLink: "songs_lists/song_preview_Tick_-_Tack.html" },
+            { title: "Vampire", artist: "Olivia Rodrigo", imageUrl: "path/to/mencintaimu.jpg", previewLink: "songs_lists/song_preview_Vampire.html" },
+            { title: "Sial", artist: "Mahalini", imageUrl: "path/to/new-song.jpg", previewLink: "songs_lists/song_preview_Sial.html" }
+        ];
+
+        function updateSongsList() {
+            const songsListElement = document.getElementById('songs-list');
+            songsListElement.innerHTML = '';
+
+            // Sort songs by latest added
+            for (let i = 0; i < songs.length; i++) {
+                const song = songs[i];
+                const songElement = document.createElement('div');
+                songElement.classList.add('col');
+                songElement.innerHTML = `
+                    <div class="card border-light border-1 d-flex justify-content-center p-4">
+                        <div class="card-body">
+                            <img class="w-100 h-100 fit-cover" src="${song.imageUrl}" alt="${song.title}" style="width: 100%; height: auto;">
+                            <div>
+                                <h4 class="fw-bold">${song.title}</h4>
+                                <p class="text-muted">${song.artist}</p>
+                                <a class="btn btn-sm px-0" role="button" href="${song.previewLink}">Learn More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 0 0-.708L7.207 4.793a.5.5 0 0 0-.707.707L9.793 8l-3.293 3.293a.5.5 0 0 0 .707.707l3.646-3.646z"/>
+                                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                songsListElement.appendChild(songElement);
+            }
+        }
+
+        // Example: Adding a new song and updating the list
+        function addNewSong(newSong) {
+            if (songs.length >= 3) {
+                songs.pop();  // Remove the last (oldest) song
+            }
+            songs.unshift(newSong);  // Add the new song at the beginning
+            updateSongsList();
+        }
+
+        // Call to initially populate the song list
+        updateSongsList();
+    </script>
+</body>
 </html>
