@@ -74,7 +74,7 @@
     </section>
 
     <footer>
-		<!-- Donation Button -->
+        <!-- Donation Button -->
         <div class="text-center mt-4">
             <a href="https://sociabuzz.com/noob_pianist/tribe" class="btn btn-primary btn-lg" id="donateButton" target="_blank">Donate to Noob Pianist.</a>
         </div>
@@ -94,19 +94,19 @@
             </div>
             <hr>
             <p class="mb-0">Copyright © 2025 Noob Pianist</p>
-        </div>		
+        </div>
     </footer>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/startup-modern.js"></script>
     <script src="assets/js/theme-switcher.js"></script>
-	<script src="assets/js/donation.js"></script>
+    <script src="assets/js/donation.js"></script>
 
     <script>
-        const songs = [					
-            { title: "Badut Baru", artist: "Dbatlayar", imageUrl: "assets/img/album_cover/badut baru.jpg", previewLink: "songs_lists/song_preview_Badut_Baru.html" },
-            { title: "Batter_Up", artist: "Babymonster", imageUrl: "assets/img/album_cover/batter up.jpg", previewLink: "songs_lists/song_preview_Batter_Up.html" },   
-			{ title: "Taste", artist: "Sabrina Carpenter", imageUrl: "assets/img/album_cover/taste.jpg", previewLink: "songs_lists/song_preview_Taste.html" }         
+        const songs = [		
+            { title: "Garam Dan Madu", artist: "Tenxi, Naykilla & Jemsii", imageUrl: "assets/img/album_cover/garam.png", previewLink: "songs_lists/song_preview_Garam_dan_Madu" },
+            { title: "Mencintaimu", artist: "Mahalani", imageUrl: "assets/img/album_cover/mencintaimu.jpg", previewLink: "songs_lists/song_preview_Mencintaimu.html" },
+            { title: "Untungnya, Hidup Harus Tetap Berjalan", artist: "Bernadya", imageUrl: "assets/img/album_cover/Untungnya, Hidup Harus Tetap Berjalan.jpg", previewLink: "songs_lists/song_preview_Untungnya,_Hidup_Harus_Tetap_Berjalan.html" }
         ];
 
         function updateSongsList() {
@@ -119,19 +119,19 @@
                 const songElement = document.createElement('div');
                 songElement.classList.add('col');
                 songElement.innerHTML = `
-                    <div class="card border-light border-1 d-flex justify-content-center p-4">
-                        <div class="card-body">
-                            <img class="w-100 h-100 fit-cover" src="${song.imageUrl}" alt="${song.title}" style="width: 100%; height: auto;">
-                            <div>
-                                <h4 class="fw-bold">${song.title}</h4>
-                                <p class="text-muted">${song.artist}</p>
-                                <a class="btn btn-sm px-0" role="button" href="${song.previewLink}">Learn More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
-                                    <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 0 0-.708L7.207 4.793a.5.5 0 0 0-.707.707L9.793 8l-3.293 3.293a.5.5 0 0 0 .707.707l3.646-3.646z"/>
-                                </svg></a>
+                        <div class="card border-light border-1 d-flex justify-content-center p-4">
+                            <div class="card-body">
+                                <img class="w-100 h-100 fit-cover" src="${song.imageUrl}" alt="${song.title}" style="width: 100%; height: auto;">
+                                <div>
+                                    <h4 class="fw-bold">${song.title}</h4>
+                                    <p class="text-muted">${song.artist}</p>
+                                    <a class="btn btn-sm px-0" role="button" href="${song.previewLink}">Learn More&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                                        <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 0 0-.708L7.207 4.793a.5.5 0 0 0-.707.707L9.793 8l-3.293 3.293a.5.5 0 0 0 .707.707l3.646-3.646z"/>
+                                    </svg></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                `;
+                    `;
                 songsListElement.appendChild(songElement);
             }
         }
@@ -148,5 +148,30 @@
         // Call to initially populate the song list
         updateSongsList();
     </script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAF3sMC9kB-C_h7dCHBdabnmejQJP3hSmY",
+            authDomain: "np-page.firebaseapp.com",
+            projectId: "np-page",
+            storageBucket: "np-page.firebasestorage.app",
+            messagingSenderId: "8095213801",
+            appId: "1:8095213801:web:c4172ebda409f3b564a878",
+            measurementId: "G-B804L889LV"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
 </body>
 </html>
