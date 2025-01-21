@@ -24,17 +24,3 @@
   color: var(--bs-dark);
 }
 
-.gif-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 800px; /* Set the width of the GIF container */
-    height: 600px; /* Set the height of the GIF container */
-    margin: 0 auto; /* Center the container horizontally */
-}
-
-.centered-gif {
-    max-width: 100%; /* Ensures the GIF fits within the container */
-    max-height: 100%; /* Ensures the GIF fits within the container */
-}
-
