@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noob Company Sheet Music Collection Website - Documentation</title>
+    <link rel="stylesheet" href="assets/css/documentation.css">
+	<link rel="icon" href="assets/img/icon/icon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+          <aside class="sidebar" id="toc-sidebar">
+                 <nav>
+                    <ul id="toc">
+                      </ul>
+                 </nav>
+            </aside>
+        <main>
+         <h1>Noob Company Sheet Music Collection Website - Documentation</h1>
+              <section id="revision-history">
+            <h2>Revision History</h2>
+            <div class="revision-list">
+                <div class="revision-item">
+                    <p><strong>Date:</strong> 2024-01-23</p>
+                     <p><strong>Author:</strong> Engineer Muhammad Faris Hakim</p>
+                    <p><strong>Description:</strong> Initial documentation created with HTML and a dynamic table of contents.</p>
+                </div>
+                <div class="revision-item">
+                    <p><strong>Date:</strong> 2024-01-24</p>
+                     <p><strong>Author:</strong> Engineer Muhammad Faris Hakim</p>
+                     <p><strong>Description:</strong> Updated documentation to include all changes made previously. added link to admin page. </p>
+					 <p><strong>Description:</strong> Updated main application to use local images for the navigation, and updated the documentation to reflect that change. </p>
+                 </div>
+            </div>
+        </section>
+        <section id="overview">
+            <h2>1. Project Overview</h2>
+            <p>The sheet music collection website is a web application designed to manage and display a collection of sheet music. It allows users to browse through songs, artists, and view details about each song, including previews, download links, and information about the key and tempo. Additionally, the website has an admin panel to add or edit songs and artists.</p>
+            <p>The application is built using:</p>
+            <ul>
+                <li>HTML for structure.</li>
+                <li>CSS for styling.</li>
+                <li>JavaScript for dynamic content loading and interactivity.</li>
+                <li>JSON for data storage.</li>
+            </ul>
+        </section>
+
+        <section id="structure">
+            <h2>2. Project Structure</h2>
+            <p>The project is organized into the following files and folders:</p>
+            <ul>
+                <li><strong>`index.html`:** The main HTML file that sets up the basic page structure.</li>
+                <li><strong>`assets/css/style.css`:** Contains all the styling rules for the main application.</li>
+                  <li><strong>`assets/css/documentation.css`:** Contains all the styling rules for the documentation page.</li>
+                <li><strong>`assets/js/templates.js`:** Holds the HTML template strings for different page sections.</li>
+                <li><strong>`assets/js/script.js`:** The main JavaScript file for the main application.</li>
+                   <li><strong>`assets/js/admin.js`:** The JavaScript file for the admin panel.</li>
+                <li><strong>`assets/json/`:**
+                  <ul>
+                        <li><strong>`songs.json`:** A JSON file containing the song data.</li>
+                        <li><strong>`artist.txt`:** Contains all the artists that is used.</li>
+                  </ul>
+                </li>
+                <li><strong>`assets/img/`:** Directory for storing all images.</li>
+                <li><strong>`assets/pdf/`:** Directory for storing PDF sheet music.</li>
+                <li><strong>`assets/audio/`:** Directory for storing audio files.</li>
+                <li><strong>`admin.html`:** The main HTML file for the admin panel.</li>
+               <li><strong>`documentation.html`:** The documentation page you are reading now.</li>
+            </ul>
+        </section>
+
+        <section id="functionality">
+            <h2>3. Functionality</h2>
+            <h3>3.1 Main Website</h3>
+            <ul>
+                <li><strong>Navigation:</strong>
+                    <ul>
+                        <li>The sidebar provides navigation links to Home, Artists, and All Songs.</li>
+                         <li>Clicking these links updates the URL hash, triggering a content update.</li>
+                    </ul>
+                </li>
+                <li><strong>Dynamic Content:</strong>
+                    <ul>
+                        <li>The <code>script.js</code> file listens for <code>hashchange</code> events and calls the <code>loadContent()</code> function.</li>
+                        <li><code>loadContent()</code> fetches data using <code>fetchStaticData()</code>.</li>
+                        <li>It uses templates from <code>templates.js</code> to generate HTML.</li>
+                    </ul>
+                </li>
+                <li><strong>Home Page:</strong> Displays recent songs (sorted by the <code>dateAdded</code> attribute) and a list of artists.</li>
+                <li><strong>Artists Page:</strong> Displays a list of all artists.</li>
+                <li><strong>Artist Detail Page:</strong> Displays songs for a selected artist.</li>
+                <li><strong>All Songs Page:</strong> Displays a list of all songs.</li>
+                <li><strong>Song Detail Page:</strong> Displays details for a selected song.</li>
+                 <li><strong>Lazy Loading:</strong> Images are lazy-loaded to improve performance.</li>
+            </ul>
+
+            <h3>3.2 Admin Panel</h3>
+            <ul>
+                 <li>The <code>admin.html</code> page allows adding, editing, and deleting songs and artists.</li>
+                <li>It loads artists from <code>assets/json/artist.txt</code> and songs from <code>assets/json/songs.json</code>.</li>
+                <li>It includes forms for editing/adding song details, artist name, and images.</li>
+               <li>When images are added, a relative path is saved in the JSON file instead of a data URL.</li>
+                <li>The modified data is saved to the json file using the manual download approach.</li>
+            </ul>
+        </section>
+        <section id="code-breakdown">
+            <h2>4. Code Breakdown</h2>
+
+            <h3>4.1 `index.html`</h3>
+            <ul>
+                 <li>Sets up the basic HTML structure of the main application.</li>
+                <li>Contains the sidebar navigation and the main content area.</li>
+                <li>Links to CSS, Google Fonts, and JavaScript files.</li>
+                <li>Uses local images instead of font-awesome for the sidebar.</li>
+            </ul>
+             <h3>4.2 `admin.html`</h3>
+            <ul>
+                 <li>Sets up the basic HTML structure of the admin page.</li>
+                <li>Contains forms for song and artist editing and creation.</li>
+                <li>Links to CSS and JavaScript files.</li>
+            </ul>
+             <h3>4.3 `style.css`</h3>
+            <ul>
+                 <li>Provides all styling for the main application using CSS.</li>
+                <li>Uses a responsive design approach to handle different screen sizes.</li>
+                <li>Includes styles for layout, navigation, images, cards, headers, text, and buttons.</li>
+                <li>Uses flexbox for layout and grid for the artist and song listings.</li>
+                <li>Provides styling for image lazy-loading.</li>
+                <li>Keeps a consistent color palette and spacing.</li>
+            </ul>
+               <h3>4.4 `admin.css`</h3>
+            <ul>
+                 <li>Provides all styling for the admin panel using CSS.</li>
+                 <li>Includes styles for forms, tables, buttons.</li>
+                <li>Keeps a consistent color palette and spacing.</li>
+            </ul>
+
+            <h3>4.5 `templates.js`</h3>
+            <ul>
+                <li>This file holds the HTML templates in the form of Javascript template literals.</li>
+                <li>It is used to construct the page's HTML by string interpolation.</li>
+                <li>It contains templates for all the section headers, homepage, artists page, all songs, artist detail page and song detail page.</li>
+            </ul>
+             <h3>4.6 `script.js`</h3>
+            <ul>
+                 <li><strong><code>loadContent()</code> Function:</strong>
+                    <ul>
+                        <li>This function handles dynamic content loading based on the URL hash.</li>
+                        <li>It uses <code>fetchStaticData()</code> to fetch JSON data.</li>
+                        <li>It uses switch cases to conditionally display data based on the URL.</li>
+                         <li>Handles loading the home page, artists page, all songs page, artist detail page and song detail page.</li>
+                    </ul>
+                </li>
+                <li><strong><code>fetchStaticData()</code> Function:</strong> Fetches JSON data from a specified path.</li>
+                <li><strong><code>loadLazyImages()</code> Function:</strong> Handles the lazy loading of images.</li>
+                <li><strong><code>getArtistsFromSongs()</code> Function:</strong> Extracts the unique artist from the song data.</li>
+                 <li>Contains event listener for <code>hashchange</code> event.</li>
+                <li>Loads initial content using <code>loadContent()</code>.</li>
+            </ul>
+            <h3>4.7 `admin.js`</h3>
+              <ul>
+                <li><strong><code>fetchArtists()</code> Function:</strong> Fetches artist names from <code>assets/json/artist.txt</code>.</li>
+                <li><strong><code>populateArtistDropdown</code> Function:</strong> Dynamically populates the artist dropdown select.</li>
+                <li><strong><code>addArtistBtn</code> Event Listener:</strong> Handles the addition of a new artist, and calls <code>saveArtistsToFile</code>.</li>
+                <li><strong><code>saveArtistsToFile()</code> Function:</strong> Handles saving of the <code>artists.txt</code> file, it triggers a manual download.</li>
+                <li><strong><code>fetchSongsData()</code> Function:</strong> Fetches JSON data from <code>assets/json/songs.json</code>.</li>
+                <li><strong><code>renderSongTable()</code> Function:</strong> Renders the song data into a table in the admin panel.</li>
+                <li><strong>Event Listeners:</strong> Handles edits, deletes, and file uploads.</li>
+                <li><strong><code>addSongBtn</code> Event Listener:</strong> Gets data from the form, formats the image path, and saves it to the song object, then save to json file.</li>
+                <li><strong><code>saveSongsData()</code> Function:</strong> Saves the song data. It triggers the manual download.</li>
+                 <li>Handles adding new songs or editing existing ones.</li>
+                <li>Handles image uploads and generates a relative path name for both artist images and song images, stores this path on the JSON file.</li>
+               <li>Contains event listener for save button which saves data using manual download.</li>
+             </ul>
+        </section>
+        <section id="css-styling">
+            <h2>5. CSS Styling</h2>
+            <p>
+               The CSS file follows a mobile-first approach and uses a lot of flexbox and grid to create responsive views across all devices.
+                It has clear separation of styles for the container, sidebar, main content, headers, song listings, artist listings and song detail pages.
+                It has a consistent theming throughout the website.
+                The main styling is contained in a <code>style.css</code> file.
+                The admin panel styles are contained in `admin.css`.
+            </p>
+        </section>
+        <section id="how-to-setup">
+            <h2>6. How to Setup and Use</h2>
+            <h3>6.1 Local Setup</h3>
+             <ol>
+               <li>Make sure you have a code editor like VSCode, Sublime Text.</li>
+                <li>Download or clone all the files for the project.</li>
+                <li>Make sure you have all the dependencies like  <code>assets/json/songs.json</code>, and <code>assets/json/artist.txt</code> , also the image, pdf, and audio folder, with images of your choice on those folder.</li>
+                <li>Open the <code>index.html</code> in your browser to use the main application.</li>
+                <li>Open the <code>admin.html</code> in your browser to use the admin panel.</li>
+            </ol>
+
+            <h3>6.2 Usage</h3>
+             <h4>Main Application</h4>
+           <ul>
+                <li>Use the sidebar to navigate between Home, Artists, and All Songs.</li>
+                <li>Click on artist cards to view songs for a specific artist.</li>
+                 <li>Click on song cards to view detailed information and download sheet music.</li>
+            </ul>
+             <h4>Admin Panel</h4>
+           <ol>
+                <li>Use the form to add new songs or edit existing ones.</li>
+                <li>You can upload images for artists and songs when adding or editing.</li>
+                <li>If the artist does not exist you can add a new one.</li>
+               <li>When done adding the song click <code>add song</code>, when done editing click <code>save JSON</code>, this will trigger a manual download.</li>
+                 <li>After downloading <code>songs.json</code> or <code>artists.txt</code>, remember to replace these on your folder.</li>
+            </ol>
+        </section>
+        <section id="areas-improvement">
+            <h2>7. Areas for Improvement</h2>
+            <ul>
+                <li><strong>Search Functionality:</strong> Add search capability to the main application to search for songs and artists.</li>
+                <li><strong>Pagination:</strong> Implement pagination for the all songs list.</li>
+                <li><strong>Filtering:</strong> Implement filtering capabilities to filter songs by artist, key, or bpm.</li>
+                <li><strong>Advanced Image Management:</strong> Add the ability to upload images directly to the server, instead of relying on manually added paths.</li>
+                <li><strong>Error Handling:</strong> Add more robust error handling, with clear error messages to the users.</li>
+                <li><strong>User Authentication:</strong> If needed, add authentication to the admin panel.</li>
+                 <li><strong>Backend integration:</strong> Integrate a server that can automatically save to the json data and upload the images.</li>
+            </ul>
+        </section>
+       </main>
+	   <button type="button"><a href="admin.html">See Admin</a></button>
+    </div>
+       <script src="assets/js/documentation.js"></script>
+</body>
+</html>

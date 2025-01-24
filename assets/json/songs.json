@@ -1,0 +1,718 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 8,
+            "attributes": {
+              "artist_name": "Clean Bandit",
+              "image": "assets/img/artist_image/Clean_Bandit.webp"
+            }
+          }
+        },
+        "title": "Cry Baby",
+        "bpm": 120,
+        "page": "5",
+        "songImage": "assets/img/album_cover/cry baby.jpeg",
+        "keySignature": "Db Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1Oh8JhQLoB2qN-9sIor0pZfalOFGBPhID/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 9,
+            "attributes": {
+              "artist_name": "Bruno Mars",
+              "image": "assets/img/artist_image/bruno_mars.jpg"
+            }
+          }
+        },
+        "title": "Die With A Smile",
+        "bpm": 160,
+        "page": "9",
+        "songImage": "assets/img/album_cover/die with a smile.png",
+        "keySignature": "A Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1e3ezttAXghsqWLQkwbvjtdrxoPj8PgLS/view?usp=sharing"
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 10,
+            "attributes": {
+              "artist_name": "Lisa",
+              "image": "assets/img/artist_image/Lisa.png"
+            }
+          }
+        },
+        "title": "Moonlit Floor",
+        "bpm": 100,
+        "page": "6",
+        "songImage": "assets/img/album_cover/moonlit.png",
+        "keySignature": "Eb Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1DYJ6qXmdbROpCSZc3GmyrrnBKanUSBKW/view?usp=sharing"
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 11,
+            "attributes": {
+              "artist_name": "Soft Cell",
+              "image": "assets/img/artist_image/Soft Cell.jpg"
+            }
+          }
+        },
+        "title": "Tainted Love",
+        "bpm": 154,
+        "page": "5",
+        "songImage": "assets/img/album_cover/tainted love.jpg",
+        "keySignature": "Bb Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1WuA2oc2KEOJ-3Swhs50G1ouo27_l_Sv3/view?usp=sharing"
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 12,
+            "attributes": {
+              "artist_name": "Rose",
+              "image": "assets/img/artist_image/Rosé.jpg"
+            }
+          }
+        },
+        "title": "APT",
+        "bpm": 150,
+        "page": "7",
+        "songImage": "assets/img/album_cover/apt.jpg",
+        "keySignature": "D Major",
+        "dateAdded": "2025-01-26",
+        "video": "https://www.youtube-nocookie.com/embed/4fnRjJper2I?controls=0",
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/18yBfamJBd0i0moArnqmrrQP9HvGccOjw/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 22,
+            "attributes": {
+              "artist_name": "Sabrina Carpenter",
+              "image": "assets/img/artist_image/Sabrina Carpenter.webp"
+            }
+          }
+        },
+        "title": "Taste",
+        "bpm": 110,
+        "page": "8",
+        "songImage": "assets/img/album_cover/taste.jpg",
+        "keySignature": "Bb Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1aRNKukHCt7WOiIWL2oEwxuUXhfvxGxO-/view?usp=sharing"
+      }
+    },
+    {
+      "id": 8,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 15,
+            "attributes": {
+              "artist_name": "Babymonster",
+              "image": "assets/img/artist_image/babymosnter.jpeg"
+            }
+          }
+        },
+        "title": "Batter Up",
+        "bpm": 130,
+        "page": "8",
+        "songImage": "assets/img/album_cover/batter up.jpg",
+        "keySignature": "C Major",
+        "dateAdded": "2025-01-25",
+        "video": "https://www.youtube-nocookie.com/embed/bqTsrcp3fuo?controls=0",
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1oV62J3KQcG3Dad3kt3Njn3U09oGcCoa9/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 9,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 16,
+            "attributes": {
+              "artist_name": "Babymonster",
+              "image": "assets/img/artist_image/babymosnter.jpeg"
+            }
+          }
+        },
+        "title": "Dream",
+        "bpm": 120,
+        "page": "9",
+        "songImage": "assets/img/album_cover/dream.webp",
+        "keySignature": "D# Minor",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1cvuw_GjMfQzG2zIo1W5HoFRQk_CQzcIk/view?usp=sharing"
+      }
+    },
+    {
+      "id": 10,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 17,
+            "attributes": {
+              "artist_name": "Babymonster",
+              "image": "assets/img/artist_image/babymosnter.jpeg"
+            }
+          }
+        },
+        "title": "Drip",
+        "bpm": 120,
+        "page": "9",
+        "songImage": "assets/img/album_cover/drip.jpg",
+        "keySignature": "C Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1ERdn-Vx2_uc_zsjzk4tkjy4PaEQWS9t4/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 11,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 18,
+            "attributes": {
+              "artist_name": "Babymonster",
+              "image": "assets/img/artist_image/babymosnter.jpeg"
+            }
+          }
+        },
+        "title": "Forever",
+        "bpm": 130,
+        "page": "10",
+        "songImage": "assets/img/album_cover/forever.jpg",
+        "keySignature": "C Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1Z_lbJNxqqrSN2TO7TQAo8tZHrPJpQe2B/view?usp=sharing"
+      }
+    },
+    {
+      "id": 12,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 22,
+            "attributes": {
+              "artist_name": "Babymonster",
+              "image": "assets/img/artist_image/babymosnter.jpeg"
+            }
+          }
+        },
+        "title": "Like That",
+        "bpm": 100,
+        "page": "9",
+        "songImage": "assets/img/album_cover/like that.webp",
+        "keySignature": "D Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1TXmU86mos68Amcctwowuu3VPAaRwlhOS/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 13,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 20,
+            "attributes": {
+              "artist_name": "Meovv",
+              "image": "assets/img/artist_image/meovv.jpg"
+            }
+          }
+        },
+        "title": "Meow",
+        "bpm": 130,
+        "page": "9",
+        "songImage": "assets/img/album_cover/meow.jpg",
+        "keySignature": "G Minor",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1tqKRNuCfRyxuLwx2bftnuUqHSrykikoA/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 14,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 21,
+            "attributes": {
+              "artist_name": "Babymonster",
+              "image": "assets/img/artist_image/babymosnter.jpeg"
+            }
+          }
+        },
+        "title": "Sheesh",
+        "bpm": 143,
+        "page": "7",
+        "songImage": "assets/img/album_cover/sheesh.jpg",
+        "keySignature": "F Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1L48Vq94zGc21-hpYIsUANt103BVi_e4t/view?usp=sharing"
+      }
+    },
+    {
+      "id": 15,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 22,
+            "attributes": {
+              "artist_name": "Babymonster",
+              "image": "assets/img/artist_image/babymosnter.jpeg"
+            }
+          }
+        },
+        "title": "Stuck In The Middle",
+        "bpm": 130,
+        "page": "11",
+        "songImage": "assets/img/album_cover/stuck in the middle.webp",
+        "keySignature": "A Major",
+        "dateAdded": "2025-01-26",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1g3nJicZjo5EOy4ht8Y0-o4ID2ObRQ-dN/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 16,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 23,
+            "attributes": {
+              "artist_name": "ILLIT",
+              "image": "assets/img/artist_image/ILLIT.jpg"
+            }
+          }
+        },
+        "title": "Tick - Tack",
+        "bpm": 130,
+        "page": "6",
+        "songImage": "assets/img/album_cover/Tick-Tack.png",
+        "keySignature": "C Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1iucwhNa0bxpP-qRkbpjrAEQjImdPdMod/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 17,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 24,
+            "attributes": {
+              "artist_name": "Bernadya",
+              "image": "assets/img/artist_image/bernadya.jpg"
+            }
+          }
+        },
+        "title": "Untungnya, Hidup Harus Tetap Berjalan",
+        "bpm": 150,
+        "page": "7",
+        "songImage": "assets/img/album_cover/Untungnya, Hidup Harus Tetap Berjalan.jpg",
+        "keySignature": "C Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1am6Me9G1ds08EzqwO7WjQV13Sz_UYDFj/view?usp=sharing"
+      }
+    },
+    {
+      "id": 18,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 32,
+            "attributes": {
+              "artist_name": "IDGITAF",
+              "image": "assets/img/artist_image/Meiska.jpeg"
+            }
+          }
+        },
+        "title": "Berakhir Di Aku",
+        "bpm": 140,
+        "page": "7",
+        "songImage": "assets/img/album_cover/keras kepala.jpg",
+        "keySignature": "C Major",
+        "dateAdded": "2025-01-25",
+        "video": "https://www.youtube-nocookie.com/embed/qWb8uEjrrPw?controls=0",
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1B-nSHqPf7oq5b76Ak1f2DtjdM0vqOy59/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 19,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 26,
+            "attributes": {
+              "artist_name": "Rio Clappy",
+              "image": "assets/img/artist_image/Rio Clappy.jpg"
+            }
+          }
+        },
+        "title": "Bunga Abadi",
+        "bpm": 130,
+        "page": "9",
+        "songImage": "assets/img/album_cover/bunga.png",
+        "keySignature": "E Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1138unKrruCFDBEPrgQxIM7WagDlkhhAL/view?usp=sharing"
+      }
+    },
+    {
+      "id": 20,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 27,
+            "attributes": {
+              "artist_name": "Sal Priadi",
+              "image": "assets/img/artist_image/Sal Priadi.jpg"
+            }
+          }
+        },
+        "title": "Gala Bunga Matahari",
+        "bpm": 187,
+        "page": "12",
+        "songImage": "assets/img/album_cover/gala bunga.jpg",
+        "keySignature": "Ab Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1xtNUZ6MEdsq1obxLLlDv7XznznMqbgn_/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 21,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 28,
+            "attributes": {
+              "artist_name": "Naykilla",
+              "image": "assets/img/artist_image/Naykilla.jpeg"
+            }
+          }
+        },
+        "title": "Garam & Madu",
+        "bpm": 125,
+        "page": "9",
+        "songImage": "assets/img/album_cover/garam.png",
+        "keySignature": "D# Minor",
+        "dateAdded": "2025-01-27",
+        "video": "https://www.youtube-nocookie.com/embed/brkqOdz_vss?controls=0",
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1KddYXrV1F1R2YDBHjT1a1uQps03huXHT/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 22,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 32,
+            "attributes": {
+              "artist_name": "Yovie & Nuno",
+              "image": "assets/img/artist_image/Meiska.jpeg"
+            }
+          }
+        },
+        "title": "Janji Suci",
+        "bpm": 118,
+        "page": "6",
+        "songImage": "assets/img/album_cover/keras kepala.jpg",
+        "keySignature": "A Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1GHqPdzAKy5hicoUWCMW8x1vdXqsO97BQ/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 23,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 31,
+            "attributes": {
+              "artist_name": "Meiska",
+              "image": "assets/img/artist_image/Meiska.jpeg"
+            }
+          }
+        },
+        "title": "Keras Kepala",
+        "bpm": 118,
+        "page": "8",
+        "songImage": "assets/img/album_cover/keras kepala.jpg",
+        "keySignature": "D Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1Pgt1Zxygokl46MnA__GKFZHB2AD2r4yD/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 24,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 32,
+            "attributes": {
+              "artist_name": "Anggis Devaki",
+              "image": "assets/img/artist_image/Anggis Devaki.jpg"
+            }
+          }
+        },
+        "title": "Kisah Tanpa Dirimu",
+        "bpm": 140,
+        "page": "9",
+        "songImage": "assets/img/album_cover/kisah tanpa dirimu.jpg",
+        "keySignature": "D# Minor",
+        "dateAdded": "2025-01-27",
+        "video": "https://www.youtube-nocookie.com/embed/vsqnUxNM0DY?controls=0",
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/17a0yNGzQ4YVPCcFCZyNXQqVf7hDil8tN/view?usp=sharing"
+      }
+    },
+    {
+      "id": 25,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 33,
+            "attributes": {
+              "artist_name": "Ernie Zakri",
+              "image": "assets/img/artist_image/ernie_zakri.jpg"
+            }
+          }
+        },
+        "title": "Masing - Masing",
+        "bpm": 130,
+        "page": "13",
+        "songImage": "assets/img/album_cover/masing - masing.jpg",
+        "keySignature": "C Minor",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1tJ-RwjoNXsdkor_ioojjiaPz6CTpwsCa/view?usp=drive_link"
+      }
+    },
+    {
+      "id": 26,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 34,
+            "attributes": {
+              "artist_name": "Mahalini",
+              "image": "assets/img/artist_image/mahalani.jpg"
+            }
+          }
+        },
+        "title": "Mencintaimu",
+        "bpm": 146,
+        "page": "8",
+        "songImage": "assets/img/album_cover/mencintaimu.jpg",
+        "keySignature": "F Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1rFZtmmrlJgw3bz_7_DCRgaksMs5l7_mg/view?usp=sharing"
+      }
+    },
+    {
+      "id": 27,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 35,
+            "attributes": {
+              "artist_name": "Mahalini",
+              "image": "assets/img/artist_image/mahalani.jpg"
+            }
+          }
+        },
+        "title": "Sampai Menutup Mata",
+        "bpm": 87,
+        "page": "8",
+        "songImage": "assets/img/album_cover/Sampai Menutup Mata.jpg",
+        "keySignature": "G Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1-P2Yd-mjF4xE1_6BX20sIYkF0MB3VSr8/view?usp=sharing"
+      }
+    },
+    {
+      "id": 28,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 36,
+            "attributes": {
+              "artist_name": "IDGITAF",
+              "image": "assets/img/artist_image/IDGITAF.jpg"
+            }
+          }
+        },
+        "title": "Mulai",
+        "bpm": 100,
+        "page": "7",
+        "songImage": "assets/img/album_cover/mulai.jpg",
+        "keySignature": "E Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1hw65Z7J1eEXDvG3AM-8SJ8Rp369HyKX7/view?usp=sharing"
+      }
+    },
+    {
+      "id": 29,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 37,
+            "attributes": {
+              "artist_name": "IDGITAF",
+              "image": "assets/img/artist_image/IDGITAF.jpg"
+            }
+          }
+        },
+        "title": "Satu - Satu",
+        "bpm": 96,
+        "page": "6",
+        "songImage": "assets/img/album_cover/satu - satu.jpg",
+        "keySignature": "E Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1Swn0MkijAazKl98J51dxo_IfZULYsHJd/view?usp=sharing"
+      }
+    },
+    {
+      "id": 30,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 39,
+            "attributes": {
+              "artist_name": "Bernadya",
+              "image": "assets/img/artist_image/bernadya.jpg"
+            }
+          }
+        },
+        "title": "Satu Bulan",
+        "bpm": 160,
+        "page": "8",
+        "songImage": "assets/img/album_cover/satu bulan.png",
+        "keySignature": "C Major",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1ucab1J69RrdkvsMjPJcO8GauTN5GHQH-/view?usp=sharing"
+      }
+    },
+    {
+      "id": 31,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 40,
+            "attributes": {
+              "artist_name": "Mahalini",
+              "image": "assets/img/artist_image/mahalani.jpg"
+            }
+          }
+        },
+        "title": "Sial",
+        "bpm": 125,
+        "page": "12",
+        "songImage": "assets/img/album_cover/sial.jpg",
+        "keySignature": "G# Minor",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1gQZ-kfgBCQC3_n3biuCq2-ZJBW3RfHH5/view?usp=sharing"
+      }
+    },
+    {
+      "id": 32,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 41,
+            "attributes": {
+              "artist_name": "Adrian Khalif",
+              "image": "assets/img/artist_image/asrian_khalif.jpg"
+            }
+          }
+        },
+        "title": "Sialan",
+        "bpm": 130,
+        "page": "7",
+        "songImage": "assets/img/album_cover/sialan.webp",
+        "keySignature": "C Minor",
+        "dateAdded": "2025-01-25",
+        "video": null,
+        "mp3": null,
+        "downloadLink": "https://drive.google.com/file/d/1UDlqOoJ-sKjNwMRGzpqNCCH-LTkEbeQ7/view?usp=sharing"
+      }
+    }
+  ],
+  "lastUpdated": "2025-01-24T17:24:26.756Z"
+}

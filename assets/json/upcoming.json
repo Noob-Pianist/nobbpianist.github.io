@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 1,
+            "attributes": {
+              "artist_name": "Bedabodee",
+              "image": "assets/img/artist_image/Beabadoobee.webp"
+            }
+          }
+        },
+        "title": "Apple Cidar",
+        "bpm": 120,
+        "songImage": "assets/img/album_cover/apple_cidar.jpg",
+        "keySignature": "Db Major",
+        "dateAdded": ""
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "artist": {
+          "data": {
+            "id": 1,
+            "attributes": {
+              "artist_name": "Bedabodee",
+              "image": "assets/img/artist_image/Beabadoobee.webp"
+            }
+          }
+        },
+        "title": "10:36",
+        "bpm": 120,
+        "songImage": "assets/img/album_cover/10-36.jpg",
+        "keySignature": "Db Major",
+        "dateAdded": ""
+      }
+    }
+  ]
+}
